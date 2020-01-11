@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:elevation="4dp"
+    android:padding="8dp"
+    android:layout_marginTop="8dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/playlist_layout"
+        android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/news"
+                android:id="@+id/playlist_news_image"
+                android:background="@drawable/image_bg"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/playlist_remove"
+                android:layout_toRightOf="@id/playlist_news_image"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="heading"
+                    android:id="@+id/playlist_heading_text"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:id="@+id/playlist_description_text"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_remove"
+                android:id="@+id/playlist_remove"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+</RelativeLayout>
